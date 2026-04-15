@@ -1,13 +1,13 @@
 MODE = None
-NAME = vXXX
+NAME = v61
 all:
-ifneq ($(NAME), vXXX)
-	@(find . -type f -name "*" -print0 | xargs -0 sed -i'' -e "s/vXXX/$(NAME)/g")
-	@(mv vXXX/vXXX.tex vXXX/$(NAME).tex)
-	@(mv vXXX $(NAME))
+ifneq ($(NAME), v61)
+	@(find . -type f -name "*" -print0 | xargs -0 sed -i'' -e "s/v61/$(NAME)/g")
+	@(mv v61/v61.tex v61/$(NAME).tex)
+	@(mv v61 $(NAME))
 endif
 	$(MAKE) -C $(NAME) MODE=$(MODE)
-	cp $(NAME)/build/tex/$(NAME).pdf $(NAME)_rosenbaum_michels.pdf
+	cp $(NAME)/build/tex/$(NAME).pdf $(NAME)_rosenbaum_hikade.pdf
 
 plots:
 	$(MAKE) -C $(NAME) plot

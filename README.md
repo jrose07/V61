@@ -3,7 +3,7 @@
 1. Clone Template and rename it to current Experiment
 2. Use "make NAME='Experiment Name' " to rename inside the files
 3. Write the Python Script inside of "plot.py" 
-4. Write the Sections inside "vXXX/content"
+4. Write the Sections inside "v61/content"
 
 ###### Use make in different Modes #####
 
